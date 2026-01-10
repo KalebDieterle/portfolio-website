@@ -3,9 +3,15 @@ import Button from "./Button";
 
 const Navbar = () => {
   return (
-    <div>
+    <nav className="flex flex-wrap justify-center gap-3 mt-4">
       <Button link="https://github.com/KalebDieterle" title="My GitHub" />
-    </div>
+      <Button
+        link="https://www.linkedin.com/in/kaleb-dieterle-010341268/"
+        title="My LinkedIn"
+      />
+      <Button link="/about" title="About Me" />
+      <Button link="#projects" title="My Projects" />
+    </nav>
   );
 };
 
