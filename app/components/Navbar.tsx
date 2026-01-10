@@ -12,6 +12,7 @@ const Navbar = () => {
       <Button link="#about" title="About Me" />
       <Button link="#projects" title="My Projects" />
       <Button link="#skills" title="My Skills" />
+      <Button link="#education" title="My Education" />
     </nav>
   );
 };
