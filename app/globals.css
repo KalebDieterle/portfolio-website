@@ -9,6 +9,11 @@
   --foreground: #171717;
 }
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
+}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -30,10 +35,15 @@ body {
 }
 
 header {
-  background-color: transparent;
+  position: relative;
+  background-color: #000000;
+  background-image: 
+    radial-gradient(at 20% 50%, rgba(6, 182, 212, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(168, 85, 247, 0.1) 0px, transparent 50%);
   color: #ffffff;
   font-size: 2.5rem;
   margin: 0; 
+  padding: 1.5rem ;
   text-align: center;
 }
 
@@ -44,7 +54,16 @@ nav {
   text-align: center;
 }
 
-header {
-  background-color: #000000;
-  padding: 1.5rem ; 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle, rgba(100, 100, 100, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+  pointer-events: none;
+  z-index: -1;
 }
+

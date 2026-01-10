@@ -9,8 +9,9 @@ const Navbar = () => {
         link="https://www.linkedin.com/in/kaleb-dieterle-010341268/"
         title="My LinkedIn"
       />
-      <Button link="/about" title="About Me" />
+      <Button link="#about" title="About Me" />
       <Button link="#projects" title="My Projects" />
+      <Button link="#skills" title="My Skills" />
     </nav>
   );
 };
