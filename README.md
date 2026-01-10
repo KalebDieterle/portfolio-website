@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js, React, and Tailwind CSS to showcase my projects, skills, and education as a Computer and Data Science student.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Responsive Design** - Looks great on desktop, tablet, and mobile devices
+- **Modern UI** - Clean, professional design with smooth animations using DaisyUI components
+- **Skills Showcase** - Organized display of frontend and backend skills
+- **Project Gallery** - Highlights of key projects with technology tags
+- **Education Timeline** - Academic background and relevant coursework
+- **Typewriter Effect** - Dynamic text animations for an engaging user experience
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js 16](https://nextjs.org/) with App Router
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/) + [DaisyUI](https://daisyui.com/)
+- **Runtime:** [React 19](https://react.dev/)
+
+## 📁 Project Structure
+
+```
+app/
+├── components/         # Reusable UI components
+│   ├── sections/       # Page sections (Skills, Projects, Education, Footer)
+│   └── icons/          # Icon components
+├── data/               # Portfolio content data
+├── hooks/              # Custom React hooks
+├── layout.tsx          # Root layout
+└── page.tsx            # Home page
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 18+
+- npm, yarn, pnpm, or bun
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   git clone <repository-url>
+   cd portfolio-website
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Install dependencies:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Start the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📜 Available Scripts
+
+| Command         | Description              |
+| --------------- | ------------------------ |
+| `npm run dev`   | Start development server |
+| `npm run build` | Build for production     |
+| `npm run start` | Start production server  |
+| `npm run lint`  | Run ESLint               |
+
+## 🎨 Customization
+
+Portfolio content can be easily updated by modifying the data files in `app/data/portfolio-data.ts`, including:
+
+- Skills and technologies
+- Education history
+- Project information
+
+## 📄 License
+
+This project is for personal use.
