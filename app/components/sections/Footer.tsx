@@ -58,8 +58,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-slate-700/50 pt-8">
           <p className="text-gray-500 text-sm text-center">
-            &copy; {new Date().getFullYear()} Kaleb Dieterle. All rights
-            reserved.
+            - Made by Kaleb Dieterle • 2026
           </p>
         </div>
       </div>
