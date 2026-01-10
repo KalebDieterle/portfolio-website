@@ -127,7 +127,7 @@ export const projectsData = [
   {
     title: "Personal Portfolio Website",
     subtitle: "Full-Stack Web Development",
-    image: "/images/swe_development_image.avif",
+    image: "/images/portfolio_website_image.jpg",
     imageAlt: "Portfolio Website Development",
     tags: [
       { name: "Next.js", color: "bg-gray-600/20 text-gray-300" },
@@ -161,7 +161,7 @@ export const contactLinks = [
     external: true,
   },
   {
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/kaleb-dieterle-010341268/",
     label: "LinkedIn",
     type: "linkedin" as const,
     external: true,
