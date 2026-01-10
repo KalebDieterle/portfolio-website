@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="bg-gradient-to-b from-slate-900 via-black to-black py-12 text-center relative overflow-hidden">
+      <header className="bg-gradient-to-b from-slate-900 via-black to-black py-12 text-center relative overflow-hidden border-b-2 border-cyan-500/20">
         <div className="min-h-24 flex items-center justify-center">
           <h1 className="text-white text-5xl md:text-5xl font-extrabold tracking-tighter">
             <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
