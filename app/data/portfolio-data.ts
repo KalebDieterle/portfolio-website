@@ -144,6 +144,27 @@ export const projectsData = [
     gradientTo: "to-pink-600",
     iconType: "code" as const,
   },
+  {
+    title: "Job Market Analytics Dashboard",
+    subtitle: "Full-Stack Data Analytics Platform",
+    image: "/images/job_postings_image.jpg",
+    imageAlt: "Job Market Analytics Dashboard",
+    tags: [
+      { name: "Next.js", color: "bg-gray-600/20 text-gray-300" },
+      { name: "TypeScript", color: "bg-blue-500/20 text-blue-300" },
+      { name: "PostgreSQL", color: "bg-sky-500/20 text-sky-300" },
+      { name: "Recharts", color: "bg-emerald-500/20 text-emerald-300" },
+    ],
+    features: [
+      "Interactive dashboard for exploring job market trends and hiring data",
+      "Role detail pages with top skills, companies, and salary statistics",
+      "Searchable roles listing with sparkline trend visualizations",
+    ],
+    githubUrl: "https://github.com/KalebDieterle/job-postings-analysis-app",
+    gradientFrom: "from-emerald-500",
+    gradientTo: "to-teal-600",
+    iconType: "database" as const,
+  },
 ];
 
 // Contact Data

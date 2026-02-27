@@ -64,9 +64,9 @@ export const CodeIcon = ({ className = "w-5 h-5 text-cyan-400" }: { className?: 
   </svg>
 );
 
-export const DatabaseIcon = () => (
+export const DatabaseIcon = ({ className = "w-5 h-5 text-purple-400" }: { className?: string }) => (
   <svg
-    className="w-5 h-5 text-purple-400"
+    className={className}
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
@@ -175,12 +175,14 @@ export const LinkedInIcon = () => (
 );
 
 // Helper to get icon by type
-export const getProjectIcon = (type: "cart" | "code") => {
+export const getProjectIcon = (type: "cart" | "code" | "database") => {
   switch (type) {
     case "cart":
       return <CartIcon />;
     case "code":
       return <CodeIcon className="w-5 h-5 text-white" />;
+    case "database":
+      return <DatabaseIcon className="w-5 h-5 text-white" />;
     default:
       return <CodeIcon className="w-5 h-5 text-white" />;
   }

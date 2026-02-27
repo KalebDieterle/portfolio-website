@@ -13,7 +13,7 @@ const ProjectPlaceholder = ({
   gradientFrom = "from-purple-500",
   gradientTo = "to-pink-600",
 }: ProjectPlaceholderProps) => (
-  <div className="group relative lg:col-start-1 lg:col-end-3">
+  <div className="group relative">
     <div
       className={`absolute -inset-0.5 bg-gradient-to-r ${gradientFrom} ${gradientTo} rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-300`}
     ></div>
