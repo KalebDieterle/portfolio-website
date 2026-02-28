@@ -104,6 +104,48 @@ export const stats = [
 // Projects Data
 export const projectsData = [
   {
+    title: "Job Market Analytics Dashboard",
+    subtitle: "Full-Stack Analytics Platform",
+    image: "/images/job_postings_image.jpg",
+    imageAlt: "Job Market Analytics Dashboard",
+    tags: [
+      { name: "Next.js", color: "bg-gray-600/20 text-gray-300" },
+      { name: "TypeScript", color: "bg-blue-500/20 text-blue-300" },
+      { name: "Neon Postgres", color: "bg-sky-500/20 text-sky-300" },
+      { name: "Drizzle ORM", color: "bg-emerald-500/20 text-emerald-300" },
+    ],
+    features: [
+      "Built with Next.js App Router server components and API routes for role, salary, and trend analytics.",
+      "Backed by Neon Postgres + Drizzle migrations with normalized company data and deduplicated job ingestion.",
+      "Integrated a FastAPI ML service (LightGBM/scikit-learn) for salary prediction and skill-gap intelligence.",
+    ],
+    githubUrl: "https://github.com/KalebDieterle/job-postings-analysis-app",
+    gradientFrom: "from-emerald-500",
+    gradientTo: "to-teal-600",
+    iconType: "database" as const,
+  },
+  {
+    title: "PRL Automation IPI",
+    subtitle: "Desktop Workflow Automation",
+    image: "/images/swe_development_image.avif",
+    imageAlt: "PRL Automation IPI Desktop App",
+    tags: [
+      { name: "Python", color: "bg-yellow-500/20 text-yellow-300" },
+      { name: "Tkinter", color: "bg-indigo-500/20 text-indigo-300" },
+      { name: "Selenium", color: "bg-green-500/20 text-green-300" },
+      { name: "xlwings/openpyxl", color: "bg-orange-500/20 text-orange-300" },
+    ],
+    features: [
+      "Windows desktop app automating client meeting prep across Redtail CRM, Envestnet, and MoneyGuidePro.",
+      "Generates Excel/PowerPoint outputs via xlwings, openpyxl, python-pptx, and PyInstaller packaging.",
+      "Cut meeting-prep time by about 75% by automating folder setup, data capture, and document generation.",
+    ],
+    githubUrl: "https://github.com/KalebDieterle/PRL-Automation-IPI",
+    gradientFrom: "from-amber-500",
+    gradientTo: "to-orange-600",
+    iconType: "code" as const,
+  },
+  {
     title: "PC E-Commerce Website Logic",
     subtitle: "Backend Development Project",
     image: "/images/swe_development_image.avif",
@@ -143,27 +185,6 @@ export const projectsData = [
     gradientFrom: "from-purple-500",
     gradientTo: "to-pink-600",
     iconType: "code" as const,
-  },
-  {
-    title: "Job Market Analytics Dashboard",
-    subtitle: "Full-Stack Data Analytics Platform",
-    image: "/images/job_postings_image.jpg",
-    imageAlt: "Job Market Analytics Dashboard",
-    tags: [
-      { name: "Next.js", color: "bg-gray-600/20 text-gray-300" },
-      { name: "TypeScript", color: "bg-blue-500/20 text-blue-300" },
-      { name: "PostgreSQL", color: "bg-sky-500/20 text-sky-300" },
-      { name: "Recharts", color: "bg-emerald-500/20 text-emerald-300" },
-    ],
-    features: [
-      "Interactive dashboard for exploring job market trends and hiring data",
-      "Role detail pages with top skills, companies, and salary statistics",
-      "Searchable roles listing with sparkline trend visualizations",
-    ],
-    githubUrl: "https://github.com/KalebDieterle/job-postings-analysis-app",
-    gradientFrom: "from-emerald-500",
-    gradientTo: "to-teal-600",
-    iconType: "database" as const,
   },
 ];
 

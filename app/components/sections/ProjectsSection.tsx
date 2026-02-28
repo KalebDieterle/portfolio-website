@@ -66,7 +66,7 @@ export default function ProjectsSection() {
           </div>
         ))}
         <div
-          className={isVisible ? "animate-reveal-up" : "opacity-0"}
+          className={`${isVisible ? "animate-reveal-up" : "opacity-0"} lg:col-span-2`}
           style={{ animationDelay: `${projectsData.length * 150}ms` }}
         >
           <ProjectPlaceholder />
