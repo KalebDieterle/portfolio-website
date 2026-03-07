@@ -18,11 +18,18 @@ import {
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="max-w-5xl mx-auto px-4 md:px-6 py-16">
-      <h2 className="text-3xl font-bold mb-4 text-center">My Skills</h2>
-      <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
-        Technologies and tools I use to bring ideas to life
-      </p>
+    <section id="skills" className="relative max-w-5xl mx-auto px-4 md:px-6 py-24">
+      <div className="text-center mb-16">
+        <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500 to-purple-600 mb-5 shadow-lg shadow-cyan-500/20">
+          <CodeIcon className="w-7 h-7 text-white" />
+        </div>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
+          Skills & Tools
+        </h2>
+        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          Technologies and tools I use to bring ideas to life
+        </p>
+      </div>
 
       {/* Technical Skills */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">

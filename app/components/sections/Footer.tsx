@@ -56,9 +56,16 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-slate-700/50 pt-8">
-          <p className="text-gray-500 text-sm text-center">
-            - Made by Kaleb Dieterle • 2026
+        <div className="border-t border-slate-700/50 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-gray-500 text-sm">
+            Designed & built by{" "}
+            <span className="bg-linear-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent font-medium">
+              Kaleb Dieterle
+            </span>{" "}
+            · 2026
+          </p>
+          <p className="text-gray-600 text-xs font-mono tracking-wider">
+            Next.js · TypeScript · Tailwind CSS
           </p>
         </div>
       </div>

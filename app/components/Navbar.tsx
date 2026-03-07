@@ -30,6 +30,7 @@ const Navbar = () => {
       <NavButton link="#about" title="About Me" />
       <NavButton link="#projects" title="My Projects" />
       <NavButton link="#skills" title="My Skills" />
+      <NavButton link="#experience" title="My Experience" />
       <NavButton link="#education" title="My Education" />
     </nav>
   );

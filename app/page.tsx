@@ -3,6 +3,8 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import Navbar from "./components/Navbar";
+import SpotlightCursor from "./components/SpotlightCursor";
+import TechMarquee from "./components/TechMarquee";
 import { useTypewriter } from "./hooks/useTypewriter";
 import { useEffect, useState, useRef } from "react";
 import {
@@ -21,6 +23,11 @@ const ProjectsSection = dynamic(
 
 const SkillsSection = dynamic(
   () => import("./components/sections/SkillsSection"),
+  { loading: () => <SectionSkeleton /> }
+);
+
+const WorkExperienceSection = dynamic(
+  () => import("./components/sections/WorkExperienceSection"),
   { loading: () => <SectionSkeleton /> }
 );
 
@@ -104,6 +111,7 @@ export default function Home() {
 
   return (
     <>
+      <SpotlightCursor />
       {/* Header - Immersive Hero Section */}
       <header className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden">
         {/* Animated background gradient */}
@@ -414,9 +422,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Scrolling tech marquee */}
+      <TechMarquee />
+
       {/* Lazy-loaded sections */}
       <ProjectsSection />
       <SkillsSection />
+      <WorkExperienceSection />
       <EducationSection />
       <Footer />
     </>
