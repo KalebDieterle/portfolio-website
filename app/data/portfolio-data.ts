@@ -130,7 +130,7 @@ export const projectsData = [
   {
     title: "PRL Automation IPI",
     subtitle: "Desktop Workflow Automation",
-    image: "/images/swe_development_image.avif",
+    image: "/images/prl_automation_screenshot.png",
     imageAlt: "PRL Automation IPI Desktop App",
     tags: [
       { name: "Python", color: "bg-yellow-500/20 text-yellow-300" },
